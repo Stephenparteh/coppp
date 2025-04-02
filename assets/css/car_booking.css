@@ -7,6 +7,8 @@
   /* background: #316c61 !important; */
   min-height: 115vh;
   padding-top: 150px;
+  width: 100%;
+  min-width: 100%;
 }
 
 .hero-section::before {
@@ -308,6 +310,7 @@
   .hero-section {
     min-height: 100vh; /* Reduce height for mobile */
     padding-top: 100px;
+    width: 100%;
     /* background-color: red; */
   }
 
@@ -323,6 +326,15 @@
 
   .contact-form {
     margin: 0 auto; /* Center the form on mobile */
+    min-width: 325px;
+    /* max-width: 400px; */
+    width: 100%;
+    background-color: red;
+  }
+
+  .contact-form form {
+    background-color: purple;
+    /* width: 325px; */
   }
 
   .absolute-section {
