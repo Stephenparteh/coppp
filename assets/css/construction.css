@@ -17,6 +17,10 @@ body {
   color: #fff;
 }
 
+main{
+  min-width: 100%;
+}
+
 .main-content {
   width: 90%;
   /* display: flex; */
