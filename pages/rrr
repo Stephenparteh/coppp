@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ZMC - About</title>
+    
+        <!-- favicon included here -->
+        <link rel="shortcut icon" href="../assets/images/logo/ZMC.png" type="image/x-icon" />
+    
+        <!-- apple touch icon included here -->
+        <link rel="apple-touch-icon" href="../assets/images/logo/ZMC.png" />
+    
+        <!-- All css files included here -->
+        <!-- Bootstrap  v5.2.1 css -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+        <!-- slick slider css -->
+        <link rel="stylesheet" href="../assets/css/slick.css" />
+        <link rel="stylesheet" href="../assets/css/slick-theme.css" />
+        <!-- pie progress css -->
+        <link rel="stylesheet" href="../assets/css/asPieProgress.min.css" />
+        <!-- VenoBox 2.0.4 css -->
+        <link rel="stylesheet" href="../assets/css/venobox.min.css" />
+        <!-- Light Box css -->
+        <link rel="stylesheet" href="../assets/css/lightbox.css" />
+        <!-- headline.css -->
+        <link rel="stylesheet" href="../assets/css/headline.css" />
+        <!-- font awesome -->
+        <link rel="stylesheet" href="../../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    
+        <!-- custom css -->
+        <link rel="stylesheet" href="../assets/css/service.css" />
+        <!-- responsive css -->
+        <link rel="stylesheet" href="../assets/css/responsive.css" />
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+            rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+            rel="stylesheet">
+    </head>
+<body>
+     <!-- Header section start -->
+
+     <header class="header-section v6">
+        <div class="container">
+            <div class="v6-header-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-lg p-0">
+                            <div class="container header-navbar-container">
+                                <a class="navbar-brand header-logo" href="/">
+                                    <img height="50px" src="../assets/images/logo/ZMC.png" alt="header-logo"
+                                        class="logo-light" />
+                                    <img width="60px" src="../assets/images/logo/ZMC.png" alt="header-logo"
+                                        class="logo-dark" />
+                                </a>
+
+                                <a id="nav-expander" class="nav-expander bar" href="#">
+                                    <img src="assets/images/icons/menu.svg" alt="menu" />
+                                    <img src="assets/images/icons/menu-close.svg" alt="menu" />
+                                </a>
+
+                                <div class="collapse navbar-collapse header-navbar-content" id="navbarSupportedContent">
+                                    <ul class="navbar-nav main-menu">
+                                        <li class="nav-item home-nav">
+                                            <a class="nav-link  megaTablinks" href="/" data-menu="primaryText"> Home
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link dropdown-toggle" href="pages/about.html"> About us </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/service.html">Services</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/contact.html">Contact us</a>
+                                        </li>
+
+                                    </ul>
+                                    <ul class="header-extra">
+
+                                        <a href="contact.html" class="bg-olive-btn">
+                                            <span class="btn-inner">
+                                                <span class="btn-normal-text">Get Quote </span>
+                                                <span class="btn-hover-text">Get Quote </span>
+                                            </span>
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header section end -->
+
+    <!-- Canvas Mobile Menu start -->
+    <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+        <ul class="nav-menu">
+            <li class="current-menu-item">
+                <a href="/">Home</a>
+            </li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+        <ul class="nav-buttons">
+            <li>
+                <a href="#" class="bg-blue-btn">
+                    <span class="btn-inner">
+                        <span class="btn-normal-text">Get quote</span>
+                        <span class="btn-hover-text">Get quote</span>
+                    </span>
+                </a>
+            </li>
+
+
+        </ul>
+    </nav>
+    <!-- Canvas Menu end -->
+
+    <section class="hero">
+            <h1>Who We Are</h1>
+            <p>Management Sciences for Health (MSH) is a global nonprofit organization that provides governments, health organizations, and the private sector with the strategies, tools, and management support to effectively and efficiently deliver high-functioning health systems.</p>
+    </section>
+
+   
+<section class="about">
+    <h2>About MSH</h2>
+    <p>We advance knowledge and technology globally to support people locally to achieve health for all. From health ministry to community, private sector to civil society, as trusted advisors, we make the foundational changes that support the whole health system. We work shoulder-to-shoulder with countries and communities to save lives and improve the health of the world’s projects and most vulnerable people by building strong, resilient, sustainable health systems.</p>
+    <p>We are a mission-driven, global health nonprofit. For more than 50 years, we have focused on the people at the heart of the health system in each environment in which we work.</p>
+    <div class="download-links">
+        <a href="#" class="download-link">English Version</a>
+        <a href="#" class="download-link">Version française</a>
+    </div>
+    <div class="image-gallery">
+        <div class="image-container">
+            <img src="../assets/images/nurse1.jpg" alt="Our People" class="image">
+            <span class="image-text">Our People</span>
+            <span class="additional-text">Our globally recognized professionals are committed to technical excellence and provide innovative solutions to the countries and people with whom we work.</span>
+        </div>
+        <div class="image-container">
+            <img src="../assets/images/doctor1.jpg" alt="Mission, Vision, and Values" class="image">
+            <span class="image-text">Mission, Vision, and Values</span>
+            <span class="additional-text">These are the core ethics, behaviors, and principles to which we commit to abide—a promise to each other and our stakeholders that this is the experience you should expect when you interact with MSH.
+                <button>Learn more</button>
+            </span>
+        </div>
+        <div class="image-container">
+            <img src="../assets/images/doctor2.jpeg" alt="Our Strategy" class="image">
+            <span class="image-text">Our Strategy</span>
+            <span class="additional-text">Our combination of world-class technical expertise and local relationships is at the heart of our people-centered approach and strategy.
+                <button>Learn more</button>
+            </span>
+        </div>
+        <div class="image-container">
+            <img src="../assets/images/doctor3.jpeg" alt="Financial Data" class="image">
+            <span class="image-text">Financial Data</span>
+            <span class="additional-text">We have been a trusted steward of our donors' funds, ensuring that they are spent effectively and to the highest standards of compliance with all legal and regulatory requirements. Our financial statements and annual reports are found here.
+                <button>Learn more</button>
+            </span>
+        </div>
+        <div class="image-container">
+            <img src="../assets/images/nurse1.jpg" alt="Our Professionals" class="image">
+            <span class="image-text">Our Professionals</span>
+            <span class="additional-text">We offer a range of career opportunities. Join us as we help solve the world's public health challenges.
+                <button>Learn more</button>
+            </span>
+        </div>
+        <div class="image-container">
+            <img src="../assets/images/doctor2.jpeg" alt="Innovative Solutions" class="image">
+            <span class="image-text">Innovative Solutions</span>
+            <span class="additional-text">We are deeply grateful to our funding and implementing partners and the local leaders with whom we work. Join us as we seek out new innovations to meet new demands.
+                <button>Learn more</button>
+            </span>
+        </div>
+    </div>
+</section>
+
+
+<h2>Our Inspiration</h2>
+<section class="inspiration container">
+    <div class="header">
+        <h3>How We Work</h3>
+        <i class="fas fa-chevron-down dropdown-icon"></i> 
+    </div>
+    <div class="content">
+        <p>We are committed to helping countries around the world where a MRC is alignment with the MRC Sustainable Development Bank. We focus our efforts on how well reliable women countries (MSCs) and legal issues.</p>
+        <p>We promote health plans for any, we support people in build on what they already know, to take charge of new care development and raise new health care available and encourage them to work wherever needed. Our collaboration includes the public and personal needs, and society and fuel-based organizations, from health initiatives to life community.</p>
+        <p>We develop innovative solutions across all funded health systems, we are committed to helping health systems select the environment and evaluate our ability to see. We have been able to deliver good quality and culture at our level, we can be used to build more care and access to health care challenges.</p>
+        <p>We safely operate thinking: We look at every aspect of the health system and the social, economic, environmental, and other conditions that impact us, including an address and dynamic approach.</p>
+        <p>We bring data to base on every decision. Our colleagues and approaches are based on current research, detailed results, monitoring, input from partners and country governments, demographics, and epidemiology trends, and dedicated oil experience.</p>
+        <p>We work towards the goal of sustainability. Our management was established in deepening leadership and dedication into 2016 high-levels leadership among communities and we contribute professionals and those who support them. Their leadership and commitment to the best of sustainable.</p>
+    </div>
+</section>
+
+
+  
+
+    <script>
+        // Language Change Function
+        function changeLanguage(lang) {
+            alert("Language changed to: " + lang); 
+        }
+
+        // Dropdown Icon Functionality
+        const dropdownIcon = document.querySelector('.dropdown-icon');
+        const content = document.querySelector('.content');
+
+        if (dropdownIcon && content) {
+            dropdownIcon.addEventListener('click', () => {
+                console.log("Dropdown icon clicked"); 
+                content.classList.toggle('collapsed');
+                dropdownIcon.classList.toggle('rotate');
+            });
+        } else {
+            console.error("Dropdown icon or content not found"); 
+        }
+    </script>
+</body>
+</html>

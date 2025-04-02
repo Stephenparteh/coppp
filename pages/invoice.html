@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .invoice-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .company-header {
+            margin-bottom: 30px;
+        }
+        .company-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .divider {
+            border-top: 1px solid #ddd;
+            margin: 15px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .invoice-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .invoice-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+        .invoice-table th {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            background-color: #f8f9fa;
+        }
+        .invoice-table td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+        .description-col {
+            width: 55%;
+        }
+        .description-textarea {
+            width: 100%;
+            border: none;
+            background: transparent;
+            resize: none;
+            overflow: hidden;
+            min-height: 40px;
+            padding: 0;
+            font-family: inherit;
+            font-size: inherit;
+        }
+        .description-textarea:focus {
+            outline: none;
+            background: #f8f9fa;
+        }
+        .qty-col {
+            width: 10%;
+        }
+        .unit-price-col {
+            width: 15%;
+        }
+        .total-col {
+            width: 15%;
+        }
+        .action-col {
+            width: 5%;
+        }
+        .totals-table {
+            width: 300px;
+            border-collapse: collapse;
+            margin-left: auto;
+        }
+        .totals-table td {
+            padding: 8px;
+            border-bottom: 1px solid #eee;
+        }
+        .balance-due {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: right;
+            margin-top: 20px;
+        }
+        .remarks-box {
+            margin-top: 30px;
+        }
+        .form-control {
+            border: none;
+            background: transparent;
+            padding: 0;
+            width: 100%;
+        }
+        .form-control:focus {
+            box-shadow: none;
+            background: #f8f9fa;
+        }
+        .action-buttons {
+            margin-bottom: 20px;
+        }
+        .btn-sm {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.875rem;
+        }
+        .remove-item {
+            color: #dc3545;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            font-size: 16px;
+        }
+        /* PDF-specific styles */
+        .pdf-mode .description-textarea,
+        .pdf-mode .form-control {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow: visible;
+            border: none !important;
+            background: transparent !important;
+        }
+        .pdf-mode .invoice-table {
+            table-layout: auto;
+        }
+        .pdf-mode .description-col {
+            width: auto;
+            min-width: 200px;
+        }
+        .pdf-mode .qty-col,
+        .pdf-mode .unit-price-col,
+        .pdf-mode .total-col {
+            width: auto;
+            min-width: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-container" id="invoice">
+        <div class="company-header">
+            <div class="company-name"><input type="text" class="form-control" value="Zenith Multipurpose Company"></div>
+            <div><input type="text" class="form-control" value="Opposite Kailondo Hotel, Old Road"></div>
+            <div><input type="text" class="form-control" value="Monrovia, Liberia"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="section-title">BILL TO</div>
+                <div class="divider"></div>
+                <div><input type="text" class="form-control" placeholder="Contact Name"></div>
+                <div><input type="text" class="form-control" placeholder="Client Company Name"></div>
+                <div><input type="text" class="form-control" placeholder="Address"></div>
+                <div><input type="text" class="form-control" placeholder="Phone"></div>
+                <div><input type="text" class="form-control" placeholder="Email"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="invoice-title">INVOICE</div>
+                <div class="divider"></div>
+                <div class="row">
+                    <div class="col-6">
+                        <strong>DATE</strong>
+                        <div><span id="invoiceDate"></span></div>
+                    </div>
+                    <div class="col-6">
+                        <strong>INVOICE NO.</strong>
+                        <div><span id="invoiceNumber"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="btn btn-primary btn-sm" onclick="addRow()">+ Add Item</button>
+        </div>
+
+        <table class="invoice-table">
+            <thead>
+                <tr>
+                    <th class="description-col">DESCRIPTION</th>
+                    <th class="qty-col">QTY</th>
+                    <th class="unit-price-col">UNIT PRICE</th>
+                    <th class="total-col">TOTAL</th>
+                    <th class="action-col"></th>
+                </tr>
+            </thead>
+            <tbody id="invoiceItems">
+                <tr>
+                    <td class="description-col"><textarea class="description-textarea" rows="1"></textarea></td>
+                    <td class="qty-col"><input type="number" class="form-control qty" oninput="calculateTotal()"></td>
+                    <td class="unit-price-col"><input type="number" class="form-control unit-price" oninput="calculateTotal()"></td>
+                    <td class="total-col total">0.00</td>
+                    <td class="action-col"><button class="remove-item" onclick="removeRow(this)">✕</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="row">
+            <div class="col-md-6 remarks-box">
+                <strong>Remarks / Payment Instructions:</strong>
+                <textarea class="form-control" rows="3" placeholder="Enter remarks or payment instructions"></textarea>
+            </div>
+            <div class="col-md-6">
+                <table class="totals-table">
+                    <tr>
+                        <td>SUBTOTAL</td>
+                        <td>$ <span id="subtotal">0.00</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="balance-due">
+            BALANCE DUE: $ <span id="balanceDue">0.00</span>
+        </div>
+
+        <div class="text-center mt-4">
+            <button class="btn btn-success" onclick="generatePDF()">Download PDF</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const today = new Date();
+            document.getElementById("invoiceDate").textContent = today.toISOString().split('T')[0];
+            document.getElementById("invoiceNumber").textContent = `ZMC-${today.getMonth() + 1}-${today.getDate()}-${today.getFullYear()}`;
+            
+            // Auto-resize textareas when content changes
+            document.querySelectorAll('.description-textarea').forEach(textarea => {
+                textarea.addEventListener('input', function() {
+                    this.style.height = 'auto';
+                    this.style.height = (this.scrollHeight) + 'px';
+                });
+            });
+        });
+        
+        function calculateTotal() {
+            let subtotal = 0;
+            document.querySelectorAll("#invoiceItems tr").forEach(row => {
+                let qty = row.querySelector(".qty").value || 0;
+                let unitPrice = row.querySelector(".unit-price").value || 0;
+                let totalCell = row.querySelector(".total");
+                let total = parseFloat(qty) * parseFloat(unitPrice);
+                totalCell.textContent = total.toFixed(2);
+                subtotal += total;
+            });
+            
+            document.getElementById("subtotal").textContent = subtotal.toFixed(2);
+            document.getElementById("balanceDue").textContent = subtotal.toFixed(2);
+        }
+        
+        function addRow() {
+            const tableBody = document.getElementById("invoiceItems");
+            const newRow = document.createElement("tr");
+            newRow.innerHTML = `
+                <td class="description-col"><textarea class="description-textarea" rows="1"></textarea></td>
+                <td class="qty-col"><input type="number" class="form-control qty" oninput="calculateTotal()"></td>
+                <td class="unit-price-col"><input type="number" class="form-control unit-price" oninput="calculateTotal()"></td>
+                <td class="total-col total">0.00</td>
+                <td class="action-col"><button class="remove-item" onclick="removeRow(this)">✕</button></td>
+            `;
+            tableBody.appendChild(newRow);
+            
+            // Add auto-resize to new textarea
+            const textarea = newRow.querySelector('.description-textarea');
+            textarea.addEventListener('input', function() {
+                this.style.height = 'auto';
+                this.style.height = (this.scrollHeight) + 'px';
+            });
+        }
+        
+        function removeRow(button) {
+            const row = button.closest("tr");
+            row.remove();
+            calculateTotal();
+        }
+        
+        function generatePDF() {
+            const element = document.getElementById("invoice");
+            
+            // Create a clone of the element to preserve original styling
+            const clone = element.cloneNode(true);
+            clone.classList.add("pdf-mode");
+            document.body.appendChild(clone);
+            
+            // Hide buttons in the clone
+            clone.querySelectorAll("button").forEach(btn => {
+                btn.style.display = "none";
+            });
+            
+            // Convert all form elements to plain text for PDF
+            clone.querySelectorAll("input, textarea").forEach(input => {
+                const span = document.createElement("span");
+                span.textContent = input.value;
+                span.style.whiteSpace = "pre-wrap";
+                span.style.wordBreak = "break-word";
+                span.style.display = "inline-block";
+                span.style.width = "100%";
+                input.replaceWith(span);
+            });
+            
+            // PDF generation options
+            const opt = {
+                margin: 10,
+                filename: 'invoice.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { 
+                    scale: 2,
+                    letterRendering: true,
+                    useCORS: true,
+                    allowTaint: true,
+                    scrollX: 0,
+                    scrollY: 0,
+                    width: 800
+                },
+                jsPDF: { 
+                    unit: 'mm', 
+                    format: 'a4', 
+                    orientation: 'portrait',
+                    compress: true
+                }
+            };
+            
+            // Generate PDF from the clone
+            html2pdf().set(opt).from(clone).save().then(() => {
+                // Remove the clone after PDF generation
+                document.body.removeChild(clone);
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

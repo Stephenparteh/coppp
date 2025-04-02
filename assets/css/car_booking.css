@@ -1,0 +1,385 @@
+@import url(../css/style.css);
+
+.hero-section {
+  position: relative;
+  background: url("/assets/images/vehicles/driver.jpg") no-repeat center
+    center/cover;
+  /* background: #316c61 !important; */
+  min-height: 115vh;
+  padding-top: 150px;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  overflow-x: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 90%;
+  display: flex;
+  justify-self: center;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #000;
+  max-width: 350px;
+  width: 100%;
+}
+
+.contact-form form .form-select {
+  padding: 10px;
+  font-size: medium;
+}
+
+.contact-form form .form-input {
+  padding: 10px;
+  font-size: medium;
+  /* border: none; */
+  /* background-color: rgb(245, 239, 239); */
+  /* color: lightgrey; */
+  background: transparent;
+}
+.form-btn {
+  /* background-color: #f56424; */
+  background-color: #0c6d5b;
+  color: #fff;
+  padding: 15px;
+  font-size: medium;
+  border-radius: 5px;
+}
+
+.form-btn:hover {
+  background-color: #083d33;
+}
+
+.absolute-section {
+  position: absolute;
+  bottom: -500px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  /* padding-bottom: 300px; */
+}
+
+.book {
+  padding: 10px;
+  color: #fff;
+  background-color: #0c6d5b;
+  border-radius: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: medium;
+}
+
+.book:hover {
+  background-color: #083d33;
+}
+
+.service-card {
+  /* background-color: red;
+  text-align: left; */
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.review-section {
+  text-align: center;
+  padding: 50px 1px;
+  background-color: #f8f9fa;
+  margin-top: 400px;
+}
+
+.review-section .partner-image {
+  width: 100px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.review-section h2 {
+  font-weight: bold;
+}
+.review-logos img {
+  width: 40px;
+  margin: 0 10px;
+}
+.review-score {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: green;
+}
+
+.review-images {
+  width: 90%;
+  justify-self: center;
+}
+
+.review-images .small {
+  width: 100%;
+  border-radius: 10px;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.review-images .large {
+  width: 100%;
+  border-radius: 10px;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.best-driver {
+  font-size: 3rem;
+}
+
+.driver-image-div .driver-image {
+  width: 80%;
+  height: 250px;
+  object-fit: fill;
+  border-radius: 60px;
+}
+
+.driver-info .driverr {
+  padding-right: 90px;
+  /* background-color: red; */
+}
+
+.vetting-box {
+  background-color: #0c6d5b;
+  padding: 60px;
+  border-radius: 10px;
+  text-align: start;
+}
+
+.vetting-box h5 {
+  font-weight: bold;
+  color: #fff;
+}
+
+.vetting-step {
+  display: flex;
+  align-items: start; /* Align items to the start (left) */
+  justify-content: start; /* Align content to the start (left) */
+  flex-direction: column; /* Change from column to row */
+  /* background-color: pink; */
+  /* margin: 1px; */
+  padding: 10px; /* Add some padding for spacing */
+  /* background-color: red; */
+}
+
+.vetting-step .iconn {
+  font-size: 40px;
+  color: #0c6d5b;
+  background-color: #fff;
+  margin-right: 10px;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.vetting-step span {
+  /* background-color: pink; */
+  align-self: center;
+}
+
+.vetting-step i {
+  /* background-color: #000; */
+  align-self: center;
+  color: #083d33;
+  padding: 0;
+  margin: 0;
+}
+
+.vetting-step span {
+  /* background-color: blue; */
+}
+
+.vetting-icons {
+  display: flex;
+}
+
+.vetting-step p {
+  color: black;
+  font-size: 1.4rem;
+}
+
+.destination-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Overlay Effect */
+.destination-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  border-radius: 10px;
+}
+
+/* Destination Name */
+.destination-info h5 {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+  z-index: 2; /* Ensures text is above the overlay */
+}
+
+/* City List */
+.destination-info p {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  color: white;
+  z-index: 2;
+}
+
+.all-destination {
+  font-size: large;
+  border: 5px;
+  border-color: black;
+  padding: 15px;
+  background-color: #0c6d5b;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.content-section {
+  padding: 50px 0;
+  /* background-color: red; */
+  /* padding-top: 0; */
+}
+.image-container {
+  position: relative;
+}
+.overlay-box {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mapp iframe {
+  width: 100%;
+  height: 60vh;
+  border: 0;
+  border-radius: 20px;
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    min-height: 100vh; /* Reduce height for mobile */
+    padding-top: 100px;
+  }
+
+  .hero-content {
+    text-align: start;
+  }
+
+  .contact-form {
+    margin: 0 auto; /* Center the form on mobile */
+  }
+
+  .absolute-section {
+    position: relative; /* Remove absolute positioning */
+    bottom: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    margin-top: 20px; /* Add spacing */
+  }
+
+  .review-section {
+    margin-top: 0;
+  }
+
+  .driver-image-div .driver-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none !important;
+  }
+
+  .vetting-box {
+    padding: 20px;
+  }
+
+  .vetting-step {
+    margin-top: 10px;
+  }
+
+  .vetting-step p {
+    /* font-size: 10px; */
+  }
+
+  .destination-card {
+    height: 15vh;
+  }
+
+  .destination-card p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .content-section {
+    padding: 15px 0;
+  }
+
+  .content-section .image-container img {
+    height: 25vh;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .content-section h2 {
+    font-size: 2rem;
+  }
+
+  .mapp iframe {
+    height: 30vh;
+    margin-bottom: 20px;
+  }
+}
