@@ -17,7 +17,7 @@ body {
   color: #fff;
 }
 
-main{
+main {
   min-width: 100%;
 }
 
@@ -59,10 +59,12 @@ main{
 }
 .contact-form {
   background: #fff;
-  padding: 30px;
+  padding: 15px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: #000;
+  max-width: 400px;
+  width: 100%;
 }
 
 .contact-form form .form-input {
@@ -135,6 +137,10 @@ main{
 
 .mission {
   color: #316c61;
+}
+
+.mission-mov {
+  font-size: 2rem;
 }
 
 .progress {
@@ -705,8 +711,12 @@ main{
   }
 
   .hero-content h1 {
-    font-size: 1.7rem; /* Smaller font size */
+    font-size: 2.5rem; /* Smaller font size */
     text-align: start;
+  }
+
+  .hero-conn {
+    justify-items: start;
   }
 
   .hero-content .explore-btn {
@@ -716,11 +726,29 @@ main{
   }
 
   .contact-form {
+    margin: 0 auto;
+    min-width: 325px;
+    max-width: 300px;
+    width: 100%;
+    /* background-color: red; */
     margin-top: 50px;
   }
 
+  .contact-form h4 {
+    font-size: 2.6rem;
+  }
+
+  .missionn {
+    justify-items: center;
+  }
+
+  .missionn p{
+    font-size: 2.5rem;
+  }
+
   .mission-mov {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    text-align: center;
   }
 
   .construction-info .mission-img {
