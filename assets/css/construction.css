@@ -661,6 +661,18 @@ main{
     text-align: end;
   }
 
+  .hero-content {
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    padding-left: 30px;
+    margin-left: 30px;
+    /* text-align: start; */
+    /* background-color: blue; */
+  }
+
   .hero-content h1 {
     font-size: 1.8rem; /* Reduce font size */
   }
