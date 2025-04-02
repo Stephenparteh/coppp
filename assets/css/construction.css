@@ -18,7 +18,7 @@ body {
 }
 
 main {
-  min-width: 100%;
+  max-width: 100%;
 }
 
 .main-content {
@@ -535,7 +535,7 @@ main {
 }
 
 .pricing-section {
-  padding: 60px 0;
+  /* padding: 60px 0; */
   text-align: center;
   background-color: rgb(238, 233, 233);
   width: 100%;
