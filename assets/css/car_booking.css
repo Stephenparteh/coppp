@@ -331,11 +331,11 @@
     min-width: 325px;
     /* max-width: 400px; */
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
   }
 
   .contact-form form {
-    background-color: purple;
+    /* background-color: purple; */
     /* width: 325px; */
   }
 
