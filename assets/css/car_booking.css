@@ -27,6 +27,7 @@
   max-width: 90%;
   display: flex;
   justify-self: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -307,10 +308,17 @@
   .hero-section {
     min-height: 100vh; /* Reduce height for mobile */
     padding-top: 100px;
+    background-color: red;
   }
 
   .hero-content {
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
     text-align: start;
+    background-color: blue;
   }
 
   .contact-form {
@@ -381,5 +389,12 @@
   .mapp iframe {
     height: 30vh;
     margin-bottom: 20px;
+  }
+
+  .review-section {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    background-color: red;
   }
 }
