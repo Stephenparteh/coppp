@@ -733,14 +733,14 @@ main {
     /* margin-right: 150px; */
   }
 
-  .form-div{
+  .form-divv {
     background-color: blue;
   }
 
   .contact-form {
     margin: 0 auto;
     /* min-width: 325px; */
-    min-width: 525px;
+    min-width: 425px;
     width: 100%;
     background-color: red;
     margin-top: 50px;
