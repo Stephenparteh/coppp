@@ -372,7 +372,7 @@ main {
 }
 
 .workss {
-  /* background-color: white; */
+  background-color: blueviolet;
   max-width: 100%;
   min-width: 100%;
 }
@@ -633,7 +633,7 @@ main {
   background-color: #eeeae8;
   width: 99%;
   padding: 20px;
-  /* background-color: green; */
+  background-color: green;
 }
 .blog-text {
   /* padding: 20px; */
