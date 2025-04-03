@@ -743,6 +743,10 @@ main {
     font-size: 2.6rem;
   }
 
+  .service-card {
+    padding-left: 20px;
+  }
+
   .missionn {
     /* justify-items: center; */
   }
