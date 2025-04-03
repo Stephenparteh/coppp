@@ -608,7 +608,7 @@ main {
   margin-top: 15px;
 }
 .pricing-btn:hover {
-  background: #f9a423;
+  background: #bbb;
 }
 .toggle-switch {
   display: flex;
@@ -633,7 +633,7 @@ main {
   background-color: #eeeae8;
   width: 99%;
   padding: 20px;
-  background-color: #ffb649;
+  /* background-color: #ffb649; */
 }
 .blog-text {
   /* padding: 20px; */
