@@ -161,16 +161,16 @@
     </section> -->
 
     <!-- Hero section end -->
-
+    <!-- Hero Section (Large screens include form) -->
     <div class="hero-section position-relative container-fluid">
         <div class="row align-items-center hero-content">
-            <div class="col-md-8 col-12 text-white" style="text-align: start;">
+            <div class="col-md-8 col-12 text-white text-start">
                 <h1 class="fw-bold text-white">Arrive. Discover. Experience.</h1>
                 <h5 class="fw-bold text-white">Personalized transportation designed for travel</h5>
             </div>
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-12 d-none d-md-block">
+                <!-- This form is only shown on large screens -->
                 <div class="contact-form">
-                    <!-- <h4 class="fw-bold">Need Construction Help?</h4> -->
                     <form>
                         <div class="mb-3">
                             <label class="form-label">Destination</label>
@@ -196,7 +196,7 @@
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label class="form-label">Pickup time</label>
-                                <input type="time" class="form-control form-input " placeholder="Pickup time">
+                                <input type="time" class="form-control form-input" placeholder="Pickup time">
                             </div>
                         </div>
                         <div class="row">
@@ -210,14 +210,63 @@
                             </div>
                         </div>
                         <button class="btn form-btn w-100">Continue</button>
-
                     </form>
                 </div>
             </div>
         </div>
-
-
     </div>
+
+    <!-- Form Section (For Small Screens) -->
+    <div class="container mt-4 d-md-none">
+        <!-- This form is only shown on small screens -->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="contact-form">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Destination</label>
+                            <select class="form-select">
+                                <option>RIA Highway</option>
+                                <option>Barnesville</option>
+                                <option>Paynesville</option>
+                                <option>ELWA</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-input"
+                                placeholder="From (airport, port, address)">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-input"
+                                placeholder="To (airport, port, address)">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Pickup date</label>
+                                <input type="date" class="form-control form-input" placeholder="Pickup date">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Pickup time</label>
+                                <input type="time" class="form-control form-input" placeholder="Pickup time">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Passengers</label>
+                                <input type="number" class="form-control form-input" value="1" min="1">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Luggage pieces</label>
+                                <input type="number" class="form-control form-input" value="1" min="1">
+                            </div>
+                        </div>
+                        <button class="btn form-btn w-100">Continue</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="absolute-section py-4">
         <div class="row g-4">
             <div class="col-md-4">

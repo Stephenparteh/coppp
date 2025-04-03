@@ -308,7 +308,7 @@
 
 @media (max-width: 767px) {
   .hero-section {
-    min-height: 100vh; /* Reduce height for mobile */
+    min-height: 50vh; /* Reduce height for mobile */
     padding-top: 100px;
     width: 100%;
     /* background-color: red; */
