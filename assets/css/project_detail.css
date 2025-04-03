@@ -61,8 +61,6 @@
   /* background-color: red; */
 }
 .project-summary {
-  /* background: #fff; */
-  /* background-color: green; */
   padding: 20px;
   border-radius: 8px;
   margin-top: 10px;
@@ -75,14 +73,9 @@
 }
 
 .project-info {
-  /* background: #f8f9fa; */
-  /* background-color: red; */
   padding: 20px;
-  /* border-radius: 8px; */
-  /* width: 33%; */
   width: 100%;
-  max-width: 350px; /* Adjust as needed */
-  /* margin: auto; */
+  max-width: 350px;
 }
 
 .info-box {
