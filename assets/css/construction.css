@@ -622,6 +622,8 @@ main {
   padding: 50px 0;
   text-align: center;
   background-color: #fff;
+  padding-left: 20px;
+  margin-left: 20px;
 }
 .blog-card {
   display: flex;
