@@ -149,10 +149,26 @@
     <!-- Hero section end -->
 
     <main class="mainn">
-        <div class="project-header">
-            <img src="/assets/images/Construction/work2.jpg" class="img-fluid project-detail-image" alt="Project Image">
-            <button class="carousel-btn left-btn">&#9665;</button>
-            <button class="carousel-btn right-btn">&#9655;</button>
+        <div id="projectCarousel" class="carousel slide container my-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/images/Construction/work2.jpg" class="d-block carousel-imgae" alt="Project Image">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/Construction/work.jpg" class="d-block carousel-imgae" alt="Project Image">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/Construction/work3.jpg" class="d-block carousel-imgae" alt="Project Image">
+                </div>
+            </div>
+
+            <!-- Previous & Next Buttons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
         <div class="project-container mt-4 row container">
             <div class="project-summary col-lg-8 order-md-1 order-2">
