@@ -52,7 +52,6 @@
   display: flex;
   justify-self: center;
   /* background-color: red; */
-
 }
 .project-summary {
   /* background: #fff; */
@@ -166,11 +165,11 @@
   }
 
   .hero-content h1 {
-    font-size: 1.5rem; /* Smaller font size */
+    font-size: 3.5rem; /* Smaller font size */
   }
 
   .breadcrumb-container {
-    font-size: 0.8rem; /* Make breadcrumb text smaller */
+    font-size: 1.4rem; /* Make breadcrumb text smaller */
   }
 
   .project-header img {

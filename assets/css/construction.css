@@ -372,7 +372,7 @@ main {
 }
 
 .workss {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   max-width: 100%;
   min-width: 100%;
 }
@@ -734,15 +734,15 @@ main {
   }
 
   .form-divv {
-    background-color: blue;
+    /* background-color: blue; */
   }
 
   .contact-form {
     margin: 0 auto;
     /* min-width: 325px; */
-    min-width: 425px;
+    min-width: 300px;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     margin-top: 50px;
   }
 
@@ -752,6 +752,8 @@ main {
 
   .service-card {
     padding-left: 20px;
+    min-width: 300px;
+    width: 100%;
   }
 
   .missionn {
@@ -817,7 +819,7 @@ main {
 
   .workss .row .work {
     margin-top: 5px;
-    background-color: pink;
+    /* background-color: pink; */
   }
 
   .work-main-title {
