@@ -140,7 +140,7 @@
   width: 100%;
 }
 
-@@media (max-width: 768px) {
+@media (max-width: 768px) {
   .hero-section {
     height: 50vh; /* Reduce height on smaller screens */
   }

@@ -671,44 +671,11 @@ main {
 
 @media (max-width: 768px) {
   .hero-section {
-    height: 180vh; /* Reduce height on smaller screens */
-    text-align: end;
-  }
-
-  .hero-content {
-    width: 100%;
-    max-width: 90%;
-    display: flex;
-    justify-self: center;
-    justify-content: center;
-    padding-left: 30px;
-    margin-left: 30px;
-    /* text-align: start; */
-    /* background-color: blue; */
-  }
-
-  .hero-content h1 {
-    font-size: 1.8rem; /* Reduce font size */
-  }
-
-  .breadcrumb-container {
-    font-size: 0.9rem; /* Adjust breadcrumb text size */
-    padding: 6px 12px;
-  }
-
-  .project-header img {
-    height: 30vh;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-section {
-    height: 140vh; /* Further reduce height on extra small screens */
+    min-height: 50vh; /* Further reduce height on extra small screens */
     background-color: red;
   }
 
   .hero-content {
-    /* background-color: pink; */
     display: flex;
     justify-content: center;
   }
@@ -730,19 +697,12 @@ main {
   .hero-content .explore-btn {
     margin-top: 10px;
     border-radius: 5px;
-    /* margin-right: 150px; */
-  }
-
-  .form-divv {
-    /* background-color: blue; */
   }
 
   .contact-form {
     margin: 0 auto;
-    /* min-width: 325px; */
     min-width: 300px;
     width: 100%;
-    /* background-color: red; */
     margin-top: 50px;
   }
 
@@ -754,10 +714,6 @@ main {
     padding-left: 20px;
     min-width: 300px;
     width: 100%;
-  }
-
-  .missionn {
-    /* justify-items: center; */
   }
 
   .missionn p {
@@ -799,9 +755,8 @@ main {
   }
 
   .service {
-    /* background-color: red; */
-    padding-left: 20px;
-    padding-top: 0;
+    width: 100%;
+    padding: 0;
   }
 
   .section-title {
@@ -866,15 +821,11 @@ main {
 
   .mission-imgg {
     display: none;
-    /* height: 30vh;
-    border-radius: 10px;
-    margin-top: 40px;
-    display: flex;
-    justify-self: center; */
   }
 
   .breadcrumb-container {
-    font-size: 0.8rem; /* Make breadcrumb text smaller */
+    font-size: 0.9rem; /* Make breadcrumb text smaller */
+    padding: 6px 12px;
   }
 
   .project-header img {

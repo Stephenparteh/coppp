@@ -146,7 +146,7 @@
                     <h1 class="fw-bold text-white">Building Excellence with Precision and Passion.</h1>
                     <button class="btn mt-3 explore-btn">Explore Service</button>
                 </div>
-                <div class="col-md-5 col-12 form-divv">
+                <div class="col-md-5 col-12 form-divv d-none d-md-block">
                     <div class="contact-form">
                         <h4 class="fw-bold">Need Construction Help?</h4>
                         <p>We are always here to help you at any time.</p>
@@ -174,6 +174,41 @@
                 </div>
             </div>
         </div>
+
+        <!-- Form Section (For Small Screens) -->
+        <div class="container mt-4 d-md-none">
+            <!-- This form is only shown on small screens -->
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="contact-form">
+
+                        <h4 class="fw-bold">Need Construction Help?</h4>
+                        <p>We are always here to help you at any time.</p>
+                        <form>
+                            <div class="mb-4">
+                                <input type="text" class="form-control form-input" placeholder="Full Name">
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" class="form-control form-input" placeholder="Email Address">
+                            </div>
+                            <div class="mb-4">
+                                <select class="form-select form-input">
+                                    <option selected>Categories</option>
+                                    <option value="1">Residential</option>
+                                    <option value="2">Commercial</option>
+                                    <option value="3">Industrial</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control form-input" rows="3" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-orange w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--goood-->
         <!-- problemmmmmmmmmmmm -->
         <section class="">
@@ -239,7 +274,7 @@
 
         </section>
 
-        <div class="service mt-5">
+        <div class="service mt-5 container">
             <p class="section-title">Services</p>
             <div class="row">
                 <div class="col-md-6">
