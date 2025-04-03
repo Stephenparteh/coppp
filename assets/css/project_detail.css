@@ -170,6 +170,8 @@
 
   .mainn {
     margin-left: 20px;
+    min-width: 400px;
+    width: 100%;
     /* padding-left: 40px; */
     /* background-color: blue; */
   }
