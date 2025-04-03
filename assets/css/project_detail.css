@@ -140,67 +140,54 @@
   width: 100%;
 }
 
-@media (max-width: 1024px) {
-  .project-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .project-summary,
-  .project-info {
-    width: 100%;
-  }
-  .project-header img {
-    height: 50vh;
-  }
-}
-
-@media (max-width: 768px) {
+@@media (max-width: 768px) {
   .hero-section {
-    height: 50vh;
+    height: 50vh; /* Reduce height on smaller screens */
   }
+
   .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Reduce font size */
   }
+
   .breadcrumb-container {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Adjust breadcrumb text size */
     padding: 6px 12px;
   }
+
   .project-header img {
-    height: 40vh;
-  }
-  .related-projects {
-    flex-direction: column;
-    align-items: center;
-  }
-  .related-projects img {
-    height: 250px;
-  }
-  .carousel-btn {
-    padding: 8px;
+    height: 30vh;
   }
 }
 
 @media (max-width: 480px) {
   .hero-section {
-    height: 40vh;
+    height: 50vh; /* Further reduce height on extra small screens */
   }
+
   .hero-content h1 {
-    font-size: 1.5rem;
+    font-size: 3.5rem; /* Smaller font size */
   }
+
+  .mainn {
+    /* margin-left: 20px; */
+    min-width: 350px;
+    width: 100%;
+    padding-left: 40px;
+    /* background-color: blue; */
+  }
+
+  .project-container {
+    /* background-color: red; */
+    margin-left: 20px;
+    padding-left: 10px;
+    width: 100%;
+  }
+
   .breadcrumb-container {
-    font-size: 0.8rem;
+    font-size: 1.4rem; /* Make breadcrumb text smaller */
   }
+
   .project-header img {
     height: 30vh;
-  }
-  .project-container {
-    width: 100%;
-    padding: 10px;
-  }
-  .project-info {
-    max-width: 100%;
-  }
-  .carousel-btn {
-    padding: 6px;
   }
 }
