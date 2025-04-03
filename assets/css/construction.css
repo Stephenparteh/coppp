@@ -733,12 +733,16 @@ main {
     /* margin-right: 150px; */
   }
 
+  .form-div{
+    background-color: blue;
+  }
+
   .contact-form {
     margin: 0 auto;
     /* min-width: 325px; */
-    max-width: 525px;
+    min-width: 525px;
     width: 100%;
-    /* background-color: red; */
+    background-color: red;
     margin-top: 50px;
   }
 
