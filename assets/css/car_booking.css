@@ -326,18 +326,6 @@
     /* background-color: blue; */
   }
 
-  .contact-form {
-    margin: 0 auto; /* Center the form on mobile */
-    min-width: 325px;
-    /* max-width: 400px; */
-    width: 100%;
-    /* background-color: red; */
-  }
-
-  .contact-form form {
-    /* background-color: purple; */
-    /* width: 325px; */
-  }
 
   .absolute-section {
     position: relative; /* Remove absolute positioning */
