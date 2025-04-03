@@ -4,7 +4,6 @@
   position: relative;
   background: url("/assets/images/vehicles/driver.jpg") no-repeat center
     center/cover;
-  /* background: #316c61 !important; */
   min-height: 115vh;
   padding-top: 150px;
   width: 100%;
@@ -51,13 +50,9 @@
 .contact-form form .form-input {
   padding: 10px;
   font-size: medium;
-  /* border: none; */
-  /* background-color: rgb(245, 239, 239); */
-  /* color: lightgrey; */
   background: transparent;
 }
 .form-btn {
-  /* background-color: #f56424; */
   background-color: #0c6d5b;
   color: #fff;
   padding: 15px;
@@ -79,7 +74,6 @@
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  /* padding-bottom: 300px; */
 }
 
 .book {
@@ -94,11 +88,6 @@
 
 .book:hover {
   background-color: #083d33;
-}
-
-.service-card {
-  /* background-color: red;
-  text-align: left; */
 }
 
 .service-card img {
@@ -186,10 +175,7 @@
   align-items: start; /* Align items to the start (left) */
   justify-content: start; /* Align content to the start (left) */
   flex-direction: column; /* Change from column to row */
-  /* background-color: pink; */
-  /* margin: 1px; */
   padding: 10px; /* Add some padding for spacing */
-  /* background-color: red; */
 }
 
 .vetting-step .iconn {
@@ -283,8 +269,6 @@
 
 .content-section {
   padding: 50px 0;
-  /* background-color: red; */
-  /* padding-top: 0; */
 }
 .image-container {
   position: relative;
@@ -311,7 +295,6 @@
     min-height: 50vh; /* Reduce height for mobile */
     padding-top: 100px;
     width: 100%;
-    /* background-color: red; */
   }
 
   .hero-content {
@@ -322,10 +305,7 @@
     justify-content: center;
     padding-left: 30px;
     margin-left: 30px;
-    /* text-align: start; */
-    /* background-color: blue; */
   }
-
 
   .absolute-section {
     position: relative; /* Remove absolute positioning */
@@ -374,10 +354,6 @@
     margin-top: 10px;
   }
 
-  .vetting-step p {
-    /* font-size: 10px; */
-  }
-
   .destination-card {
     height: 15vh;
   }
@@ -411,6 +387,5 @@
     display: flex;
     justify-self: center;
     justify-content: center;
-    /* background-color: red; */
   }
 }
