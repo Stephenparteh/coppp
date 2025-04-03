@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+  .hero-section {
+    height: 50vh; /* Reduce height on smaller screens */
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem; /* Reduce font size */
+  }
+
+  .breadcrumb-container {
+    font-size: 0.9rem; /* Adjust breadcrumb text size */
+    padding: 6px 12px;
+  }
+
+  .project-header img {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    height: 50vh; /* Further reduce height on extra small screens */
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem; /* Smaller font size */
+  }
+
+  .mainn {
+    /* margin-left: 20px; */
+    min-width: 350px;
+    width: 100%;
+    padding-left: 40px;
+    /* background-color: blue; */
+  }
+
+  .project-container {
+    /* background-color: red; */
+    margin-left: 20px;
+    padding-left: 10px;
+    width: 100%;
+  }
+
+  .breadcrumb-container {
+    font-size: 1.4rem; /* Make breadcrumb text smaller */
+  }
+
+  .project-header img {
+    height: 30vh;
+  }
+}
